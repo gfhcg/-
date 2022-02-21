@@ -1,0 +1,263 @@
+.bottom{
+    width: 1533px;
+    height: 108px;
+    position: relative;
+    top: -109px;
+    left: 450px;
+    background-color: #fff;
+    border-top: 1px solid #e1e1e1!important;
+    z-index: 999999999999;
+}
+.bottom img{
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    border-radius: 10px;
+    top: 18px;
+    left: 18px;
+}
+.bottom .bname{
+    position: absolute;
+    width: 250px;
+    height: 30px;
+    top: 19px;
+    left: 109px;
+    font-size: 20px;
+    line-height: 30px;
+}
+.bottom .bsinger{
+    position: absolute;
+    width: 250px;
+    height: 30px;
+    top: 55px;
+    left: 109px;
+    line-height: 30px;
+}
+.bottom .bcenter{
+    position: absolute;
+    top: 15px;
+    left: 590px;
+}
+.bottom .bcenter li{
+    list-style: none;
+    width: 48px;
+    height: 48px;
+    margin-left: 30px;
+    float: left;
+    position: relative;
+}
+.bottom .bcenter .play{
+    width: 42px;
+    height: 42px;
+    top: 2px;
+    border-radius: 50%;
+}
+.bottom .bcenter .play:hover{
+    box-shadow: 1px 1px 15px #444;
+}
+.bottom .bcenter .play svg{
+    position: absolute;
+    top: -3px;
+    left: -3px;
+}
+.bottom .bcenter .last svg{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+.bottom .bcenter .last:hover svg path{
+    fill: #ef6767;
+}
+.bottom .bcenter .next svg{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+.bottom .bcenter .next:hover svg path{
+    fill: #ef6767;
+}
+.bottom .bcenter .loop svg{
+    position: absolute;
+    top: 15px;
+    left: 7px;
+}
+.bottom .bcenter .loop:hover svg path{
+    fill: #ef6767;
+}
+.bottom .bcenter .lyrics svg{
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+.bottom .bcenter .lyrics:hover svg path{
+    fill: #ef6767;
+}
+.bottom .process{
+    width: 528px;
+    height: 7px;
+    position: absolute;
+    top: 80px;
+    left: 520px;
+    background-color: #cdcdcd;
+}
+.bottom .process .movecolor{
+    width: 10px;
+    height: 7px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #ff4e4e;
+}
+.bottom .process svg{
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    z-index: 99999999;
+}
+.bottom .process .point{
+    background-color: rgb(0, 255, 115);
+    width: 50px;
+    height: 50px;
+}
+.bottom .bright{
+    margin-top: 35px;
+    margin-right: 36px;
+    float: right;
+}
+.bottom .bright li{
+    list-style: none;
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    float: left;
+}
+.pause{
+    display: none;
+}
+.detail{
+    width: 1533px;
+    height: 807px;
+    background-image: linear-gradient(#ec4141, #fff);
+    position: absolute;
+    z-index: 999999;
+    top: 290px;
+    left: 450px;
+    overflow: scroll;
+    display: none;
+}
+.detail .down{
+    margin-top: 40px;
+    margin-left: 55px;
+}
+.detail .down:hover{
+    fill: #000;
+}
+.detail .fen{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    margin-top: 103px;
+    margin-left: 100px;
+}
+.detail .fen svg{
+    position: absolute;
+    top: -50px;
+    left: -50px;
+}
+.detail .fen img{
+    width: 300px;
+    border-radius: 50%;
+    position: absolute;
+    top:95px;
+    left: 95px;
+    z-index: 99999999999;
+}
+.detail .dsong{
+    width: 500px;
+    height: 50px;
+    margin-left: 800px;
+    margin-top: 0px;
+    text-align: center;
+    font-size: 40px;
+    color: #2a2a29;
+}
+.detail .dsinger{
+    width: 500px;
+    height: 50px;
+    margin-left: 800px;
+    margin-top: 10px;
+    color: #838381;
+    font-size: 20px;
+    text-align: center;
+}
+.detail .dlyrics{
+    width: 500px;
+    height: 500px;
+    margin-left: 800px;
+    margin-top: 50px;
+    overflow: scroll;
+    text-align: center;
+    font-size: 25px;
+    line-height: 60px;
+    color: #656565;
+    font-family: "Times New Roman", Times ;
+}
+ ::-webkit-scrollbar {
+     width: 0;
+    height: 0;
+    background: transparent;
+  }
+.detail .comment{
+    width: 900px;
+    margin-left: 316px;
+    margin-top: 200px;
+}
+.detail .comment p{
+    font-size: 21px;
+    font-weight: 600;
+}
+.detail .comment ul li{
+    list-style: none;
+}
+.detail .comment .out li{
+    margin-top: 20px;
+    border-bottom: 1px solid #e4e4e4;
+}
+.detail .comment .out li img{
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    float: left;
+}
+.detail .comment .out li .content{
+    width: 800px;
+    margin-left: 60px;
+    font-size: 18px;
+}
+.detail .comment .out li .comtime{
+    width: 200px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 60px;
+    color: #999999;
+}
+.detail .comment svg:hover path{
+    fill: #2a2a29;
+}
+.detail .comment .in li{
+    float: left;
+    border: none;
+    margin-left: 10px;
+}
+.detail .comment .in .like{
+    color: #666666;
+    
+}
+
+.detail .comment .in li .share{
+    margin-top: 2px;
+}
+.detail .comment .in{
+    float: right;
+    margin-top: -50px;
+}

@@ -1,0 +1,73 @@
+.leftnav{
+    position: relative;
+    width: 300px;
+    height: 807px;
+    background-color: #fff;
+    float: left;
+    border-right: 1px solid #e1e1e1;
+    z-index: 999;
+}
+.nav{
+    border: 1px solid transparent;
+    margin-top: 13px;
+    z-index: 999;
+}
+.nav li{
+    width: 258px;
+    height: 54px;
+    list-style: none;
+    background-color: #ffffff;
+    margin-top: 5px;
+    margin-left: 18px;
+    line-height: 54px;
+    font-size: 22px;
+    padding-left: 20px;
+    z-index: 999;
+    color: #373737;
+    border-radius: 5px;
+}
+.nav li:hover{
+    background-color: #f6f6f7; 
+    color: #000;
+    border-radius: 5px;
+}
+.findmusic{
+    display: none;
+    width: 1233px;
+    height: 806px;
+    position: absolute;
+    top: 290px;
+    left:750px ;
+    background-color: #fff;
+    overflow-y:scroll; 
+}
+.current{
+    background-color: #f6f6f7!important;
+    font-weight: 800;
+    font-size: 30px!important;
+}
+.follow
+.boke
+.live
+.vid
+.FM{
+    display: none;
+    width: 1233px;
+    height: 806px;
+    position: absolute;
+    top: 290px;
+    left:750px ;
+    background-color: #fff;
+    overflow-y:scroll; 
+    z-index: 999;
+}
+.nowvid{
+    width: 1233px;
+    height: 806px;
+    position: absolute;
+    top: 290px;
+    left:750px ;
+    background-color: #fff;
+    overflow-y:scroll; 
+    z-index: 999!important;
+}

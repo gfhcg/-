@@ -1,0 +1,600 @@
+.header{
+    position: relative;
+    width: 1533px;
+    height: 90px;
+     background-color: #ec4141; 
+}
+.header .wyy{
+    width: 220px;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    z-index: 2;
+}
+.header .left{
+    width: 35px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.085);
+position: absolute;
+top: 28px;
+left: 344px;
+color: #f7d7d7;
+line-height: 36px;
+text-align: center;
+font-size: 22px;
+z-index: 999;
+}
+
+.header .right{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.085);
+position: absolute;
+top: 28px;
+left: 392px;
+color: #f7d7d7;
+line-height: 36px;
+text-align: center;
+font-size: 22px;
+z-index: 999;
+}
+.header input{
+    width: 300px;
+    height: 48px;
+    position: absolute;
+    top:21px ;
+    left: 445px;
+    background-color: rgba(0, 0, 0, 0.085);
+    border: none;
+    border-radius: 30px;
+    color: #f7d7d7;
+    font-size: 22px;
+    z-index: 999;
+}
+.lissearch{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.085);
+    position: absolute;
+    top: 21px;
+    left: 750px; 
+    z-index: 999;
+}
+.lissearch svg{
+    padding-left: 10px;
+    padding-top: 10px;
+    z-index: 999;
+}
+.header .login{
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    left:889px;
+    top: 20px;
+    line-height: 50px;
+    z-index: 999;
+    
+   
+}
+.avatarUrl{
+    width: 50px;
+    border-radius: 50%;
+}
+ .font{
+    display: inline-block;
+    height: 50px;
+    color: #f8baba;
+    font-size: 21px;
+    position: absolute;
+    top: 0px;
+    left: 60px;
+    z-index: 999;
+}
+.triangle{
+    display: inline-block;
+    position: absolute;
+    top: 23px;
+    left: 70px;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #f8baba;
+    z-index: 999;
+}
+.login svg{
+    padding-top: 5px;
+    padding-left: 10px;
+}
+.login:hover .font{
+    color: #fff; 
+}
+.login:hover .triangle{
+    border-top: 7px solid #fff;
+}
+.header ul{
+    position: absolute;
+    top: 25px;
+    right: 40px;
+    z-index: 999;
+}
+.header ul li{
+    list-style: none;
+    display: block;
+    width: 40px;
+    height: 40px;
+    float: right;
+    border: 1px solid transparent;
+    margin-left: 10px;
+}
+.header ul li svg{
+    width: 30px;
+    height: 30px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+.header ul li:hover svg path{
+    fill: #fff;
+}
+.color{
+    display: none;
+    width: 490px;
+    height: 408px;
+    position: absolute;
+    top: 292px;
+    left: 1400px;
+    background-color: #ffffff;
+    z-index: 999;
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px #888;
+    z-index: 999999!important;
+}
+.color div{
+    width: 50px;
+    font-size: 25px;
+    margin-top: 25px;
+    margin-left: 25px;
+    border-bottom: 5px solid #ec4141;
+}
+.color ul li{
+    width: 136px;
+    height: 136px;
+    list-style: none;
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+.log{
+    display: none;
+    width: 525px;
+    height: 645px;
+    position: absolute;
+    top: 293px;
+    left: 1000px;
+    background-color: #fff;
+    z-index: 999;
+    box-shadow: 3px 3px 15px #888;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 150px;
+    z-index: 999999!important;
+}
+.log .close{
+    position: absolute;
+    top: 5px;
+    right: 15px;
+}
+.log img{
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+.log .inputdiv{
+    width: 390px;
+    height: 118px;
+    border-radius: 10px;
+    position: absolute;
+    left: 68px;
+    top: 295px;
+
+}
+.log .inputdiv input{
+    width: 390px;
+    height: 59px;
+    display: inline;
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: 600;
+    border: 1px solid #d8d8d8;
+    border-radius: 10px;
+    
+}
+.log .btn2{
+    width: 389px;
+    height: 59px;
+    background-color:#ea4848 ;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 22px;
+    position: absolute;
+    left: 68px;
+    top: 445px;
+    letter-spacing:10px
+}
+.log .btn2:hover{
+    background-color: #c72e2e;
+}
+.log .file{
+    width: 525px;
+    position: absolute;
+    font-size: 18px;
+    top: 545px;
+}
+input::-webkit-input-placeholder {
+            /* placeholder颜色  */
+            color: #a9a9a9;
+            /* placeholder字体大小  */
+            font-size: 20px;
+}
+.log .file a{
+   color: #507daf;
+}
+.hot{
+    position: absolute;
+    left: 780px;
+    width: 530px;
+    height: 760px;
+    overflow: scroll;
+    background-color: #fff;
+    z-index: 999999!important;
+    display: none;
+}
+.hot div{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 30px;
+    color: #666666;
+}
+.hot ul{
+    margin-top: 15px;
+}
+.hot ul li{
+    list-style: none;
+    height: 81px;
+    width: 521px;
+    position: relative;
+}
+.hot ul li:hover{
+    background-color: #f2f2f2;
+}
+.hot ul li p{
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    font-size: 20px;
+    color: #cccccc;
+}
+.hot ul li .namehot{
+    position: absolute;
+    top: 7px;
+    left: 80px;
+    font-size: 17px;
+}
+.hot ul li .play{
+    position: absolute;
+    top: 7px;
+    left: 270px;
+    font-size: 14px;
+    color: #cccccc;
+}
+.searchcon{
+     display: none; 
+    width: 1224px;
+    height: 807px;
+    /* background-color: rgb(234, 0, 255); */
+    position: absolute;
+    top: 290px;
+    left:750px ;
+    z-index: 999;
+    overflow: scroll;
+}
+.searchcon .soup{
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 40px;
+    margin-left: 45px;
+}
+.searchcon .soup1{
+    position: absolute;
+    font-size: 30px;
+    font-weight: 800;
+    top: 40px;
+    left: 120px;
+   
+}
+.searchcon ul li{
+    list-style: none;
+}
+.searchcon .classify1{
+    margin-top: 40px;
+    width: 1215px;
+    height: 40px;
+    background-color: #fff;
+}
+.searchcon .classify1 li{
+    font-size: 21px;
+    height: 35px;
+    width: 42px;
+    float: left;
+    margin-left: 44px;
+    /* background-color: #666; */
+    line-height: 40px;
+
+}
+.conli{
+    font-size: 21px;
+    height: 35px;
+    width: 42px;
+    float: left;
+    margin-left: 44px;
+    /* background-color: #666; */
+    line-height: 40px;
+   font-weight: 800; 
+   border-bottom: 5px solid #ec4141;
+}
+.searchcon .con ul{
+    height: 51px;
+    width: 1143px;
+    margin-left: 45px;
+  
+}
+.searchcon .con ul li{
+    height: 51px;
+    width: 1143px;
+    background-color: #fff;
+    position: relative;
+}
+.searchcon .con ul li:hover{
+    background-color: #f0f1f2!important;
+}
+.searchcon .con ul li p{
+    font-size: 18px;
+    font-weight: 300;
+    color: #cfcfcf;
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    z-index: 999;
+}
+.searchcon .con ul li .conname{
+    position: absolute;
+    width: 350px;
+    height: 51px;
+    left: 70px;
+    line-height: 51px;
+    font-size: 19px;
+    font-weight: 400;
+}
+.searchcon .con ul li .conwriter{
+    position: absolute;
+    width: 200px;
+    height: 51px;
+    left: 440px;
+    line-height: 51px;
+    font-size: 19px;
+    font-weight: 400;
+}
+.searchcon .con ul li .where{
+    position: absolute;
+    width: 240px;
+    height: 51px;
+    left: 700px;
+    line-height: 51px;
+    font-size: 19px;
+    font-weight: 400;
+}
+.searchcon .con ul li .contime{
+    position: absolute;
+    width: 100px;
+    height: 51px;
+    left: 1000px;
+    background-color: pink;
+}
+.zhuanji{
+    display: none;
+    position: absolute;
+    top: 160px;
+    height: 2500px;
+    width: 1215px;
+    z-index: 999;
+
+}
+.zhuanji ul{
+    height: 2000px;
+}
+.zhuanji ul li{
+    height: 120px;
+    background-color: #ffffff;
+    position: relative;
+}
+.zhuanji ul li:hover{
+    background-color: #f0f1f2!important;
+}
+.zhuanji ul li img{
+    position: absolute;
+    width: 90px;
+    z-index: 999;
+    top: 15px;
+    left: 55px;
+    border-radius: 10px;
+}
+.zhuanji ul li .bg{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background-color: #fff;
+    margin-left: 45px;
+    background: url(音乐专辑.png) no-repeat;
+    background-size: cover;
+    margin-top: -15px;
+}
+.zhuanji ul li .zname{
+    position: absolute;
+    height: 120px;
+    width: 450px;
+    margin-left: 250px;
+    line-height: 120px;
+    font-size: 19px;
+    font-weight: 400;
+
+}
+.zhuanji ul li .zwriter{
+    position: absolute;
+    height: 120px;
+    width: 200px;
+    margin-left: 800px;
+    line-height: 120px;
+    font-size: 19px;
+    font-weight: 400;
+}
+.consinger{
+    display: none;
+    position: absolute;
+    top: 160px;
+    height: 2000px;
+    width: 1224px;
+    background-color: yellow;
+    z-index: 999;
+}
+.consinger ul{
+    height: 2000px;
+}
+.consinger ul li{
+    height: 120px;
+    background-color: #ffffff;
+    position: relative;
+}
+.consinger ul li img{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    z-index: 999;
+    top: 15px;
+    left: 55px;
+    border-radius: 10px;
+
+}
+.consinger ul li .singername{
+    position: absolute;
+    height: 120px;
+    width: 450px;
+    margin-left: 250px;
+    line-height: 120px;
+    font-size: 19px;
+    font-weight: 400;
+}
+.consinger ul li:hover{
+    background-color: #f0f1f2!important;
+}
+.consheet{
+    display: none;
+    position: absolute;
+    top: 160px;
+    height: 2000px;
+    width: 1224px;
+    z-index: 999;
+
+}
+.consheet ul{
+    height: 2000px;
+}
+.consheet ul li{
+    height: 120px;
+    background-color: #ffffff;
+    position: relative;
+}
+.consheet  ul li img{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    z-index: 999;
+    top: 15px;
+    left: 55px;
+    border-radius: 10px;
+}
+.consheet  ul li .sheetname{
+    position: absolute;
+    height: 120px;
+    width: 500px;
+    margin-left: 155px;
+    line-height: 120px;
+    font-size: 19px;
+    font-weight: 400;
+}
+.consheet  ul li .sheetcreat{
+    position: absolute;
+    height: 120px;
+    width: 150px;
+    margin-left: 750px;
+    line-height: 120px;
+    font-size: 19px;
+    font-weight: 400;
+    color: #969697;
+}
+.consheet  ul li .consheetplay{
+    position: absolute;
+    height: 120px;
+    width: 150px;
+    margin-left: 1050px;
+    line-height: 120px;
+    font-size: 19px;
+    font-weight: 400;
+    color: #969697;
+}
+.consinger ul li:hover{
+    background-color: #f0f1f2!important;
+}
+.conuser{
+    display: none;
+    position: absolute;
+    top: 160px;
+    height: 2000px;
+    width: 1224px;
+    background-color: yellow;
+    z-index: 999;
+}
+.conuser ul{
+    height: 2000px;
+}
+.conuser ul li{
+    height: 120px;
+    background-color: #ffffff;
+    position: relative;
+}
+.conuser  ul li img{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    z-index: 999;
+    top: 15px;
+    left: 55px;
+    border-radius: 50%;
+}
+.conuser ul li .username{
+    position: absolute;
+    height: 120px;
+    width: 500px;
+    margin-left: 165px;
+    line-height: 120px;
+    font-size: 19px;
+    font-weight: 400;
+}
+.conuser ul li:hover{
+    background-color: #f0f1f2!important;
+}

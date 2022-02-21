@@ -1,0 +1,26 @@
+.liheader{
+    width: 1000px;
+    height: 79px;
+    position: absolute;
+    top: 0px;
+    left:0px ;
+}
+.lisnav{
+    border: 1px solid transparent;
+    margin-left: 35px;
+}
+.lisnav li{
+    height: 70px;
+    list-style: none;
+    float: left;
+    margin-left: 15px;
+    line-height: 79px;
+    font-size: 24px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #373737;
+
+}
+.lisnav li:hover{
+    color: black;
+}

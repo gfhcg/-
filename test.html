@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        width: 500px;
+        height: 500px;
+        background-color: pink;
+    }
+
+    img:hover::before {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        -webkit-transition: -webkit-transform 1s linear;
+        transition: transform 1s linear;
+    }
+</style>
+
+<body>
+    <div id="123">
+        <img src="头像.png" alt="" style="width: 300px;">
+    </div>
+
+    <audio src="即刻出发.m4a" controls></audio>
+
+    <script>
+        var div = document.querySelector('div')
+        var img = document.querySelector('img')
+        var xhr1 = new XMLHttpRequest();
+        xhr1.responseType = 'json';
+        xhr1.open('GET', 'http://redrock.udday.cn:2022/login/cellphone?phone=13700549165&password=tianHeyuan9165');
+        xhr1.send();
+        xhr1.onreadystatechange = function () {
+            if (xhr1.readyState === 4 && xhr1.status >= 200 && xhr1.status < 300) {
+                console.log(xhr1.response);
+                /*   var xhr2 = new XMLHttpRequest();
+                 xhr2.responseType = 'json';
+                 xhr2.open('GET', 'http://redrock.udday.cn:2022/user/playlist?uid=512189031');
+                 xhr2.send();
+                 xhr2.onreadystatechange = function () {
+                     if (xhr2.readyState === 4 && xhr2.status >= 200 && xhr2.status < 300) {
+                         console.log(xhr2.response);
+ 
+                     }
+                 } */
+                var cook = xhr1.response.cookie;
+                console.log(cook);
+                fetch("http://redrock.udday.cn:2022/playlist/detail?id=24381616&cookie=" + cook.substring(0))
+                    .then((response) => response.json())
+                    .then((res) => console.log(res));
+                /*  var xhr2 = new XMLHttpRequest();
+                 xhr2.responseType = 'json';
+                 xhr2.open('GET', 'http://redrock.udday.cn:2022/playlist/detail?id=24381616');
+                 xhr2.send();
+                 xhr2.onreadystatechange = function () {
+                     if (xhr2.readyState === 4 && xhr2.status >= 200 && xhr2.status < 300) {
+                         console.log(xhr2.response);
+                     }
+                 } */
+
+                /*  for (var i = 0; i <= 29; i++) {
+                     console.log(this.response.result.songs[i].al.name);
+                 } */
+
+                //console.log(xhr1.response.result[0].picUrl);
+                //img.src = xhr1.response.result[0].picUrl;
+                // img.src = xhr1.response.list[0].coverImgUrl;
+            }
+        }
+    </script>
+</body>
+
+</html>
