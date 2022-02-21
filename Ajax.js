@@ -2714,6 +2714,100 @@ window.addEventListener('load', function () {
                     }
                 })
 
+                last.addEventListener('click', function () {
+                    songid = (xhr11.response.result[(e.target.alt)--].id).toString();
+                    console.log(songid);
+                    var nsxhr = new XMLHttpRequest();
+                    nsxhr.responseType = 'json';
+                    nsxhr.open('GET', 'http://redrock.udday.cn:2022/song/url?id=' + songid);
+                    nsxhr.send();
+                    nsxhr.onreadystatechange = function () {
+                        if (nsxhr.readyState === 4 && nsxhr.status >= 200 && nsxhr.status < 300) {
+                            //console.log(sxhr.response.data[0].url)
+                            audio.src = nsxhr.response.data[0].url;
+
+                            //2、歌词部分
+                            //初始化页面
+                            lyrics.addEventListener('click', function () {
+                                detail.style.display = 'block'
+                                var xhrgc = new XMLHttpRequest();
+                                xhrgc.responseType = 'json';
+                                xhrgc.open('GET', 'http://redrock.udday.cn:2022/lyric?id=' + songid);
+                                xhrgc.send();
+                                xhrgc.onreadystatechange = function () {
+                                    if (xhrgc.readyState === 4 && xhrgc.status >= 200 && xhrgc.status < 300) {
+                                        //剔除时间 提炼歌词
+                                        //正则 难    采用split
+                                        function init() {
+                                            var ci = xhrgc.response.lrc.lyric.split('[')
+                                            ci.forEach(function (current) {
+                                                var h = current.split(']');
+                                                var newci = h[1];
+                                                var lyricstime = h[0].split('.');
+                                                //console.log(lyricstime);
+                                                var newlyricstime = lyricstime[0].split(':');
+                                                var newlyricstime1 = newlyricstime[0] * 60 + parseInt(newlyricstime[1]);
+                                                //console.log(newlyricstime1);
+                                                if (newci) {
+                                                    dlyrics.innerHTML += '<p id="s' + newlyricstime1 + '">' + newci + '</p>';
+                                                }
+                                                /*  if (lyricstime[1]) {
+                                                     var newlyricstime1 = newlyricstime[0] * 60 + parseInt(newlyricstime[1]) +parseInt(lyricstime[1].substring(0, 2)) / 100;
+                                                     console.log(newlyricstime1);
+                                                     if (newci) {
+                                                         dlyrics.innerHTML += '<p id="s' + newlyricstime1 + '">' + newci + '</p>';
+                                                     }
+                                                 } */
+
+                                            })
+
+                                        }
+                                        init();
+                                    }
+                                }
+
+
+                            })
+                            var xhrd = new XMLHttpRequest();
+                            xhrd.responseType = 'json';
+                            xhrd.open('GET', 'http://redrock.udday.cn:2022/song/detail?ids=' + songid);
+                            xhrd.send();
+                            xhrd.onreadystatechange = function () {
+                                if (xhrd.readyState === 4 && xhrd.status >= 200 && xhrd.status < 300) {
+                                    dsong.innerHTML = xhrd.response.songs[0].al.name;
+                                    dsinger.innerHTML = '';
+                                    if (xhrd.response.songs[0].alia[0]) {
+                                        dsinger.innerHTML = '<p>' + xhrd.response.songs[0].alia[0] + '</p>';
+                                    }
+                                    dsinger.innerHTML += '<p>' + xhrd.response.songs[0].ar[0].name + '</p>';
+                                    dimg.src = xhrd.response.songs[0].al.picUrl;
+                                    leftimg.src = xhrd.response.songs[0].al.picUrl;
+                                    bname.innerHTML = xhrd.response.songs[0].al.name;
+                                    bsinger.innerHTML = xhrd.response.songs[0].ar[0].name;
+                                }
+                            }
+                            //歌曲评论
+                            var xhrconmment = new XMLHttpRequest();
+                            xhrconmment.responseType = 'json';
+                            xhrconmment.open('GET', 'http://redrock.udday.cn:2022/comment/music?id=' + songid);
+                            xhrconmment.send();
+                            xhrconmment.onreadystatechange = function () {
+                                if (xhrconmment.readyState === 4 && xhrconmment.status >= 200 && xhrconmment.status < 300) {
+                                    for (var i = 0; i <= 14; i++) {
+                                        touxiang[i].src = xhrconmment.response.hotComments[i].user.avatarUrl;
+                                        content[i].innerHTML = xhrconmment.response.hotComments[i].user.nickname;
+                                        content[i].innerHTML += ':  ' + xhrconmment.response.hotComments[i].content;
+                                        comtime[i].innerHTML = xhrconmment.response.hotComments[i].timeStr;
+                                        like[i].innerHTML += xhrconmment.response.hotComments[i].likedCount;
+                                    }
+
+                                }
+                            }
+
+                        }
+                    }
+                })
+
                 //2、歌词部分
                 //初始化页面
                 lyrics.addEventListener('click', function () {
